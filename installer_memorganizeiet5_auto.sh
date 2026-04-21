@@ -10,10 +10,10 @@
 # ==========================================================
 #
 # Example run:
-# wget -qO- "https://raw.githubusercontent.com/Saiedf/MemOrganize/main/installer_memorganizeiet5_auto.sh" | /bin/sh
+# wget -qO- "https://raw.githubusercontent.com/Saiedf/MemOrganizeiet5/main/installer_memorganizeiet5_auto.sh" | /bin/sh
 #
 # Alternative:
-# wget -O /tmp/installer_memorganizeiet5_auto.sh "https://raw.githubusercontent.com/Saiedf/MemOrganize/main/installer_memorganizeiet5_auto.sh" && chmod 755 /tmp/installer_memorganizeiet5_auto.sh && /bin/sh /tmp/installer_memorganizeiet5_auto.sh
+# wget -O /tmp/installer_memorganizeiet5_auto.sh "https://raw.githubusercontent.com/Saiedf/MemOrganizeiet5/main/installer_memorganizeiet5_auto.sh" && chmod 755 /tmp/installer_memorganizeiet5_auto.sh && /bin/sh /tmp/installer_memorganizeiet5_auto.sh
 # ==========================================================
 
 PACKAGE_NAME='enigma2-plugin-extensions-memorganizeiet5'
@@ -22,7 +22,7 @@ PLUGIN_TITLE='MemOrganize'
 PLUGIN_FOLDER='MemOrganize'
 
 REPO_USER='Saiedf'
-REPO_NAME='MemOrganize'
+REPO_NAME='MemOrganizeiet5'
 REPO_BRANCH='main'
 
 # Adjust once only if your GitHub layout is different
