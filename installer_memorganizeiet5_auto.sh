@@ -640,19 +640,22 @@ PKG_FILE=''
 DEB_CANDIDATE=$(pick_deb_file)
 IPK_CANDIDATE=$(pick_ipk_file)
 
+# Universal rule:
+# - DreamOS / Dreambox OE2.5/2.6 -> prefer .deb
+# - OpenATV / OpenPLi / OpenSPA / OpenVIX / OpenBH / OpenVision / Egami / TeamBlue / PurE2 / other open-source images -> prefer .ipk
 if [ "$IMAGE_TYPE" = 'dreamos' ]; then
-    if has_deb_support && [ -n "$DEB_CANDIDATE" ]; then
+    if [ -n "$DEB_CANDIDATE" ]; then
         PKG_TYPE='deb'
         PKG_FILE="$DEB_CANDIDATE"
-    elif has_ipk_support && [ -n "$IPK_CANDIDATE" ]; then
+    elif [ -n "$IPK_CANDIDATE" ]; then
         PKG_TYPE='ipk'
         PKG_FILE="$IPK_CANDIDATE"
     fi
 else
-    if has_ipk_support && [ -n "$IPK_CANDIDATE" ]; then
+    if [ -n "$IPK_CANDIDATE" ]; then
         PKG_TYPE='ipk'
         PKG_FILE="$IPK_CANDIDATE"
-    elif has_deb_support && [ -n "$DEB_CANDIDATE" ]; then
+    elif [ -n "$DEB_CANDIDATE" ]; then
         PKG_TYPE='deb'
         PKG_FILE="$DEB_CANDIDATE"
     fi
